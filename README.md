@@ -1,10 +1,6 @@
-# Kubectl Action
+# Elementary Action
 
-This action allows you to deploy to a kubernetes cluster.
-
-Alternatives:
-
-- [steebchen/kubectl](https://github.com/marketplace/actions/kubernetes-cli-kubectl)
+Deploy Elementary to a Kubernetes cluster
 
 ## Inputs
 
@@ -17,11 +13,9 @@ cat .kube/config | base64
 
 ## Usage
 
-## Deploy a Deployment
 ```yaml
-- uses: pedro-gutierrez/kubectl-action@1.0.0
+- uses: pedro-gutierrez/kubectl-action@v3
   name: Deploy
   with:
     kubeconfig: ${{ secrets.KUBE_CONFIG }}
-    args: apply -f deployment.yaml
 ```
