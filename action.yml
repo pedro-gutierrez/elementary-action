@@ -1,0 +1,12 @@
+name: 'elementary-action'
+description: 'Deploy elementary to a Kubernetes cluster'
+author: 'Pedro Gutiérrez'
+branding:
+  icon: 'cloud'
+  color: 'blue'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+inputs:
+  kubeconfig:
+    description: 'base64 encoded .kube/config'
